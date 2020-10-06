@@ -15,3 +15,9 @@ comp1=$(($number1+$number2 *$number3))
 ##code of Computation 2
 
 comp2=$(($number1*$number2 +$number2))
+
+
+##code of compuation 3
+
+comp3=$(($number3+($number1/$number2)))
+

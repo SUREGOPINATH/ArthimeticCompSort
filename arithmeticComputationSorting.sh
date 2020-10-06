@@ -21,3 +21,6 @@ comp2=$(($number1*$number2 +$number2))
 
 comp3=$(($number3+($number1/$number2)))
 
+##code of computation 4
+
+comp=$(($number1%$number2+$number3))

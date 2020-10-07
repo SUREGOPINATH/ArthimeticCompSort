@@ -35,3 +35,14 @@ compDictionary['comp3']=$comp3
 compDictionary['comp4']=$comp4
 
 echo ${compDictionary[@]}
+
+##code of storing values in array
+
+declare -a compArray
+compArray[0]=${compDictionary[comp1]}
+compArray[1]=${compDictionary[comp2]}
+compArray[2]=${compDictionary[comp3]}
+compArray[3]=${compDictionary[comp4]}
+
+echo ${compArray[@]}
+

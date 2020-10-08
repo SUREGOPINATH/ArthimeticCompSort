@@ -63,3 +63,14 @@ do
 done
 
 echo ${compArray[@]}
+
+##code of sorting an array in ascending order
+
+declare -a compArrayInAscending
+
+for (( counter=0,counter2=$(($lenght-1)); $counter != $lenght; counter++, counter2-- ))
+do
+	compArrayInAscending[$counter]=${compArray[$counter2]}
+done
+echo ${compArrayInAscending[@]}
+

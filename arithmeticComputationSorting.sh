@@ -46,3 +46,20 @@ compArray[3]=${compDictionary[comp4]}
 
 echo ${compArray[@]}
 
+##code of sorting in descending order
+
+lenght=${#compArray[@]}
+for (( counter=0;$counter != 4; counter++ ))
+do
+	for (( counter2=$counter;$counter2!=4;counter2++ ))
+	do
+		if [ ${compArray[counter]} -lt ${compArray[$counter2]} ]
+		then
+			temp=${compArray[$counter]};
+			compArray[$counter]=${compArray[$counter2]};
+			compArray[$counter2]=$temp;
+		fi
+	done
+done
+
+echo ${compArray[@]}
